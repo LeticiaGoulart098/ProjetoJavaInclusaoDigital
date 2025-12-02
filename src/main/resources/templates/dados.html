@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banco de Dados - Página Moderna</title>
+    <link rel="stylesheet" href="/estilodados.css" />
+</head>
+<body>
+<header class="topo">
+    <h1>Banco de Dados</h1>
+    <p>Conceitos, modelos e aplicações essenciais</p>
+</header>
+
+<section class="hero">
+    <img src="/imagens/banco.jpg" alt="Introdução Banco de Dados" />
+</section>
+
+<main class="container">
+
+    <section class="bloco">
+        <h2>O que é um Banco de Dados?</h2>
+        <p>Um banco de dados é um sistema organizado para armazenar e gerenciar grandes volumes de informações de forma estruturada, permitindo acesso rápido, seguro e eficiente.</p>
+    </section>
+
+    <section class="bloco imagem-lado">
+        <div>
+            <h2>Componentes de um Banco de Dados</h2>
+            <p><strong>Dados:</strong> Fatos brutos como nomes, números, datas e textos.</p>
+            <p><strong>SGBD:</strong> Software responsável por gerenciar o banco. Exemplos: MySQL, PostgreSQL, Oracle.</p>
+            <p><strong>Usuários:</strong> Pessoas e sistemas que utilizam o banco.</p>
+        </div>
+        <img src="imagens/componentesbanco.png" alt="Componentes do Banco de Dados" />
+    </section>
+
+    <section class="bloco">
+        <h2>Modelos de Dados</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="imagens/bancorelacional.png" alt="Modelo Relacional" />
+                <h3>Modelo Relacional</h3>
+                <p>Organiza dados em tabelas relacionadas por chaves.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/bancohierarquico.png" alt="Modelo Hierárquico" />
+                <h3>Modelo Hierárquico</h3>
+                <p>Estrutura em formato de árvore.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/modelorede.png" alt="Modelo de Rede" />
+                <h3>Modelo de Rede</h3>
+                <p>Permite múltiplas relações entre registros.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/bancooab.png" alt="Modelo OO" />
+                <h3>Orientado a Objetos</h3>
+                <p>Armazena dados no formato de objetos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bloco imagem-lado invertido">
+        <img src="imagens/seguranca-banco.png" alt="Segurança Banco" />
+        <div>
+            <h2>Funcionalidades dos Bancos de Dados</h2>
+            <p>Principais operações: consulta, inserção, atualização e remoção.</p>
+            <p><strong>Integridade:</strong> Mantém dados consistentes.</p>
+            <p><strong>Segurança:</strong> Protege contra acessos indevidos.</p>
+            <p><strong>Backup:</strong> Evita perda de informações.</p>
+        </div>
+    </section>
+
+    <section class="bloco">
+        <h2>Tipos de Bancos de Dados</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="imagens/bancorelacional.png" alt="Banco Relacional" />
+                <h3>SQL</h3>
+                <p>Estruturados e relacionais.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/banco-nosql.png" alt="Banco NoSQL" />
+                <h3>NoSQL</h3>
+                <p>Flexíveis e ideais para grandes volumes.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/banco-in-memory.png" alt="Banco In-Memory" />
+                <h3>In-Memory</h3>
+                <p>Armazenados na memória para alta performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bloco video">
+        <h2>Aulas completas para iniciantes</h2>
+        <iframe src="https://www.youtube.com/embed/Ofktsne-utM" allowfullscreen></iframe>
+    </section>
+
+    <div class="voltar">
+        <a class="btn" th:href="@{/index}">Voltar</a>
+    </div>
+</main>
+
+<footer class="rodape">
+    <p>&copy; 2024 Cursos em Tecnologia para Comunidades Carentes. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

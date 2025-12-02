@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à Programação</title>
+    <link rel="stylesheet" th:href="@{/estiloprogramacao.css}">
+</head>
+<body>
+
+<header class="cabecalho">
+    <h1>Introdução à Programação</h1>
+
+    <!-- Banner principal (mantido) -->
+    <img th:src="@{/imagens/banner.jpg}"
+         alt="Banner Introdução à Programação"
+         class="banner-principal">
+</header>
+
+<section class="linguagens">
+    <h2 class="titulo-sessao">Principais Linguagens de Programação</h2>
+
+    <!-- Removidas as imagens dos logos -->
+    <div class="grade-linguagens">
+        <p>Python, Java, PHP e JavaScript são linguagens amplamente utilizadas no mercado.</p>
+    </div>
+</section>
+
+<article>
+    <h2 class="titulo-sessao">Conceitos Fundamentais</h2>
+
+    <div class="conteudo-bloco">
+        <div>
+            <h2>Linguagens de Programação</h2>
+            <p>Existem muitas linguagens de programação, cada uma com suas próprias sintaxes e usos.</p>
+        </div>
+    </div>
+
+    <div class="conteudo-bloco">
+        <div>
+            <h2>Algoritmos</h2>
+            <p>Um algoritmo é uma sequência de passos que resolvem um problema específico.</p>
+        </div>
+    </div>
+
+    <div class="conteudo-bloco">
+        <div>
+            <h2>Estruturas de Controle</h2>
+            <p>As estruturas de controle determinam o fluxo de execução de um programa:</p>
+            <ul>
+                <li><strong>Sequência:</strong> execução linha por linha;</li>
+                <li><strong>Decisão:</strong> condições (if / else);</li>
+                <li><strong>Repetição:</strong> loops (for / while).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="conteudo-bloco">
+        <div>
+            <h2>Variáveis e Tipos de Dados</h2>
+            <p>Variáveis armazenam dados que podem ser manipulados no programa.</p>
+        </div>
+    </div>
+
+    <div class="conteudo-bloco">
+        <div>
+            <h2>Funções</h2>
+            <p>Funções são blocos de código reutilizáveis que executam tarefas específicas.</p>
+        </div>
+    </div>
+
+    <h2 class="titulo-sessao">Exemplos Práticos</h2>
+
+    <nav>
+        <h3>Exemplo em Python:</h3>
+        <pre><code># Este é um comentário
+nome = "Mundo"
+print("Olá, " + nome + "!")</code></pre>
+    </nav>
+
+    <nav>
+        <h3>Estrutura de Decisão:</h3>
+        <pre><code>idade = 18
+if idade >= 18:
+    print("Você é maior de idade.")
+else:
+    print("Você é menor de idade.")</code></pre>
+    </nav>
+
+    <nav>
+        <h3>Loop:</h3>
+        <pre><code>for i in range(5):
+    print("Este é o número", i)</code></pre>
+    </nav>
+</article>
+
+<section class="video">
+    <h2 class="titulo-sessao">Aula Completa</h2>
+    <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/8mei6uVttho?si=c3WJuHrx_KpkMrFl"
+            title="Aula de Programação no YouTube"
+            frameborder="0"
+            allowfullscreen>
+    </iframe>
+</section>
+
+<div class="voltar">
+    <a class="voltar-btn" th:href="@{/index}">Voltar</a>
+</div>
+
+
+<footer>
+    <p>&copy; 2025 Inclusão Digital — Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+/* ============================
+   ESTILO GERAL – DARK AZUL NEON
+=============================== */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: #05060a; /* fundo quase preto + azul */
+    color: #e8ecff;
+    line-height: 1.6;
+}
+
+.page-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* ============================
+   CABEÇALHO
+=============================== */
+.header {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(180deg, #0c0f1a, #06070d);
+    border-bottom: 1px solid #1a2b4a;
+    box-shadow: 0 0 25px rgba(0, 153, 255, 0.25);
+}
+
+.header h1 {
+    color: #55bfff; /* azul neon claro */
+    font-size: 2.6rem;
+    text-shadow: 0 0 12px #009dff;
+}
+
+.header img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #123057;
+    margin-top: 10px;
+    box-shadow: 0 0 15px rgba(0, 153, 255, 0.3);
+}
+
+/* ============================
+   CONTAINER
+=============================== */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/* ============================
+   BLOCOS DE CONTEÚDO
+=============================== */
+.bloco {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    background: rgba(10, 15, 30, 0.8);
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 40px;
+    border: 1px solid #1a2b4a;
+    box-shadow: 0 0 25px rgba(0, 153, 255, 0.18);
+    backdrop-filter: blur(4px);
+}
+
+.bloco h2 {
+    color: #55bfff;
+    text-shadow: 0 0 10px #0084ff;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.bloco p,
+.bloco li {
+    color: #c8dcff;
+    font-size: 1.05rem;
+}
+
+/* ============================
+   IMAGENS DOS BLOCOS
+=============================== */
+.img-bloco {
+    width: 40%;
+    min-width: 260px;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid #1a2b4a;
+    box-shadow: 0 0 16px rgba(0, 153, 255, 0.25);
+}
+
+/* ============================
+   LISTAS
+=============================== */
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* ============================
+   VÍDEO
+=============================== */
+.video iframe {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #1a2b4a;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0, 153, 255, 0.25);
+}
+
+/* ============================
+   BOTÃO VOLTAR
+=============================== */
+.voltar {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 35px;
+    background: #009dff;
+    color: #000;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 0 12px #00b7ff;
+}
+
+.btn:hover {
+    background: #33baff;
+    box-shadow: 0 0 18px #00c8ff;
+}
+
+/* ============================
+   RODAPÉ
+=============================== */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #06070d;
+    border-top: 1px solid #1a2b4a;
+    color: #8fa9d9;
+    margin-top: 20px;
+    box-shadow: 0 -3px 15px rgba(0, 153, 255, 0.15);
+}
+
+/* ============================
+   RESPONSIVIDADE
+=============================== */
+@media (max-width: 768px) {
+    .bloco {
+        text-align: center;
+    }
+    .img-bloco {
+        width: 100%;
+    }
+}

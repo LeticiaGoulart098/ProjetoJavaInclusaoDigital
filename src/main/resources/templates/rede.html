@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede de Computadores</title>
+
+    <link rel="stylesheet" th:href="@{/estilorede.css}">
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <h1>Rede de Computadores</h1>
+        <img th:src="@{/imagens/banner-rede.jpg}" alt="Banner Rede de Computadores">
+    </header>
+
+    <main>
+
+        <!-- Introdução -->
+        <section class="container">
+            <p>
+                Uma <strong>rede de computadores</strong> é um sistema que conecta dispositivos como computadores,
+                servidores, impressoras e celulares, permitindo a troca de informações e recursos de forma rápida e segura.
+            </p>
+        </section>
+
+        <!-- Dispositivos -->
+        <section class="container bloco">
+            <img th:src="@{/imagens/dispositivos-rede.jpg}" alt="Dispositivos de rede" class="img-bloco">
+            <div>
+                <h2>Dispositivos</h2>
+                <p>Equipamentos conectados à rede: computadores, laptops, smartphones, impressoras, servidores,
+                    roteadores e switches.</p>
+            </div>
+        </section>
+
+        <!-- Meios de Transmissão -->
+        <section class="container bloco">
+            <div>
+                <h2>Meios de Transmissão</h2>
+                <p>Dados enviados por cabos (par trançado, fibra óptica) ou tecnologias sem fio como Wi-Fi e Bluetooth.</p>
+            </div>
+            <img th:src="@{/imagens/fibra-optica.jpg}" alt="Cabo de fibra óptica" class="img-bloco">
+        </section>
+
+        <!-- Protocolos -->
+        <section class="container bloco">
+            <img th:src="@{/imagens/protocolos.jpg}" alt="Protocolos TCP/IP" class="img-bloco">
+            <div>
+                <h2>Protocolos</h2>
+                <p>Regras que permitem comunicação entre dispositivos: <strong>TCP/IP</strong>, <strong>HTTP</strong>,
+                    <strong>FTP</strong>, <strong>SMTP</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Topologias -->
+        <section class="container bloco">
+            <div>
+                <h2>Topologias de Rede</h2>
+                <p>Organização dos dispositivos: <strong>Estrela</strong>, <strong>Anel</strong>, <strong>Barramento</strong>.</p>
+            </div>
+            <img th:src="@{/imagens/topologia.jpg}" alt="Topologias de rede" class="img-bloco">
+        </section>
+
+        <!-- Segurança -->
+        <section class="container bloco">
+            <img th:src="@{/imagens/seguranca-rede.jpg}" alt="Segurança de rede" class="img-bloco">
+            <div>
+                <h2>Administração e Segurança</h2>
+                <p>Envolve configurar dispositivos, monitorar tráfego e aplicar <strong>firewalls</strong> e
+                    <strong>criptografia</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Benefícios -->
+        <section class="container bloco">
+            <div>
+                <h2>Benefícios das Redes</h2>
+                <ul>
+                    <li>Compartilhamento de recursos;</li>
+                    <li>Comunicação eficiente;</li>
+                    <li>Acesso à internet;</li>
+                    <li>Colaboração e trabalho em equipe.</li>
+                </ul>
+            </div>
+            <img th:src="@{/imagens/conectividade.jpg}" alt="Usuários conectados" class="img-bloco">
+        </section>
+
+        <!-- Vídeo -->
+        <section class="container video">
+            <h2>Aula completa para iniciantes:</h2>
+            <iframe
+                    src="https://www.youtube.com/embed/QkMbqL8QD9w?si=fEyeIaChhcpzNwyY"
+                    title="Curso de Redes de Computadores"
+                    frameborder="0"
+                    allowfullscreen>
+            </iframe>
+        </section>
+
+    </main>
+
+    <!-- Botão Voltar -->
+    <div class="voltar">
+        <a class="btn" th:href="@{/index}">Voltar</a>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2025 Cursos em Tecnologia para Comunidades Carentes. Todos os direitos reservados.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
+

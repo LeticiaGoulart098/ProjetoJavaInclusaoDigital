@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inclusão Digital | Cursos Gratuitos de Tecnologia</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" th:href="@{/styles.css}" />
+    <link rel="shortcut icon" th:href="@{/imagens/logo.webp}" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+<!-- ====== Cabeçalho ====== -->
+<header class="header">
+    <nav class="navbar">
+        <div class="logo-area">
+            <img th:src="@{/imagens/logo.webp}" alt="Logo Inclusão Digital" class="logo" />
+            <h1>Inclusão Digital</h1>
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">☰</button>
+
+        <ul class="menu">
+            <li><a th:href="@{/}">Início</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#impacto">Impacto Social</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Transformando Vidas pela Educação Tecnológica</h2>
+            <p>Oferecemos cursos gratuitos de tecnologia para comunidades carentes. Aprenda, evolua e conquiste seu futuro profissional!</p>
+            <a href="#cursos" class="btn-primary">🚀 Comece Agora</a>
+        </div>
+    </div>
+</header>
+
+<!-- ====== Seção de Destaque ====== -->
+<section class="section destaque">
+    <h2>Por que aprender tecnologia?</h2>
+    <p>A tecnologia abre portas para novas oportunidades. Aprender habilidades digitais é o primeiro passo para mudar vidas e impulsionar carreiras.</p>
+
+    <div class="highlights">
+        <div class="highlight-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3094/3094855.png" alt="Acesso à Educação">
+            <h3>Acesso à Educação</h3>
+            <p>Cursos totalmente gratuitos, online e acessíveis de qualquer dispositivo.</p>
+        </div>
+        <div class="highlight-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3201/3201709.png" alt="Capacitação Profissional">
+            <h3>Capacitação Profissional</h3>
+            <p>Aprenda linguagens e ferramentas usadas no mercado de trabalho real.</p>
+        </div>
+        <div class="highlight-card">
+            <h3>Transformação Social</h3>
+            <p>Nosso objetivo é criar pontes entre comunidades e oportunidades digitais.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ====== Cursos ====== -->
+<section id="cursos" class="section cursos">
+    <h2 class="section-title">💻 Nossos Cursos Gratuitos</h2>
+
+    <div class="courses-grid">
+        <div class="course-card">
+            <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" alt="Programação">
+            <h3><a th:href="@{/programacao}">Introdução à Programação</a></h3>
+        </div>
+        <div class="course-card">
+            <img src="https://images.pexels.com/photos/1181465/pexels-photo-1181465.jpeg" alt="Desenvolvimento Web">
+            <h3><a th:href="@{/web}">Desenvolvimento Web</a></h3>
+        </div>
+        <div class="course-card">
+            <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg" alt="Banco de Dados">
+            <h3><a th:href="@{/dados}">Banco de Dados</a></h3>
+        </div>
+        <div class="course-card">
+            <img src="https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg" alt="Redes de Computadores">
+            <h3><a th:href="@{/rede}">Redes de Computadores</a></h3>
+        </div>
+    </div>
+</section>
+
+<!-- ====== Impacto ====== -->
+<section id="impacto" class="section impacto">
+    <h2 class="section-title">🌍 Nosso Impacto Social</h2>
+    <div class="impacto-grid">
+        <div>
+            <h3>+5.000 alunos impactados</h3>
+            <p>Já ajudamos milhares de pessoas a entrarem no mundo digital.</p>
+        </div>
+        <div>
+            <h3>+100 comunidades atendidas</h3>
+            <p>Levando tecnologia e conhecimento a quem mais precisa.</p>
+        </div>
+        <div>
+            <h3>+50 instrutores voluntários</h3>
+            <p>Profissionais dedicados a transformar a realidade de outros através do ensino.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ====== Sobre ====== -->
+<section id="sobre" class="section sobre">
+    <h2 class="section-title">Quem Somos</h2>
+    <p>Somos uma iniciativa de inclusão tecnológica que acredita na educação como instrumento de transformação social. Unimos voluntários e parceiros para levar oportunidades digitais a quem mais precisa.</p>
+
+    <div class="about-grid">
+        <div>
+            <h3>🎯 Missão</h3>
+            <p>Promover inclusão digital por meio da educação gratuita em tecnologia.</p>
+        </div>
+        <div>
+            <h3>👁️ Visão</h3>
+            <p>Ser referência em capacitação tecnológica social no Brasil.</p>
+        </div>
+        <div>
+            <h3>💡 Valores</h3>
+            <p>Solidariedade, Acesso, Oportunidade e Transformação.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ====== Contato ====== -->
+<section id="contato" class="section contato">
+    <h2 class="section-title">Entre em Contato</h2>
+    <p>Quer fazer parte ou tirar dúvidas? Envie uma mensagem!</p>
+
+    <form th:action="@{/contato}" th:object="${contato}" method="post" class="contact-form">
+        <input type="text" th:field="*{nome}" placeholder="Seu nome" required />
+        <input type="email" th:field="*{email}" placeholder="seuemail@exemplo.com" required />
+        <input type="text" th:field="*{telefone}" placeholder="(XX) XXXXX-XXXX" />
+        <textarea th:field="*{mensagem}" placeholder="Digite sua mensagem" rows="4" required></textarea>
+        <button type="submit" class="btn-primary">Enviar</button>
+        <p th:if="${param.enviado}" class="success-msg">✅ Mensagem enviada com sucesso!</p>
+    </form>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.querySelector(".menu");
+        toggle.addEventListener("click", () => {
+            menu.classList.toggle("active");
+            toggle.classList.toggle("active");
+        });
+    });
+</script>
+
+<script th:src="@{/scripts.js}"></script>
+</body>
+
+<footer class="footer">
+    <p>&copy; 2025 Inclusão Digital — Promovendo Educação e Tecnologia para Todos.</p>
+</footer>
+</html>

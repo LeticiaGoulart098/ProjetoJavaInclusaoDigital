@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Admin - Contatos</title>
+    <link rel="stylesheet" href="/estilopaginas.css" />
+</head>
+<body>
+<header>
+    <h1>Painel de Contatos</h1>
+    <p>
+        <a th:href="@{/}">Voltar ao site público</a> |
+        <a th:href="@{/logout}">Logout</a>
+    </p>
+</header>
+
+<main>
+    <section>
+        <h2>Adicionar contato manualmente</h2>
+        <form th:action="@{/contatos/add}" th:object="${novoContato}" method="post">
+            <label>Nome: <input type="text" th:field="*{nome}" /></label><br/>
+            <label>Email: <input type="email" th:field="*{email}" /></label><br/>
+            <label>Telefone: <input type="text" th:field="*{telefone}" /></label><br/>
+            <label>Mensagem:<br/>
+                <textarea th:field="*{mensagem}" rows="3"></textarea>
+            </label><br/>
+            <button type="submit">Adicionar</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Lista de contatos</h2>
+        <table border="1" cellpadding="6">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Mensagem</th>
+                <th>Criado Em</th>
+                <th>Ações</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="c : ${contatos}">
+                <td th:text="${c.id}">1</td>
+                <td th:text="${c.nome}">Nome</td>
+                <td th:text="${c.email}">email</td>
+                <td th:text="${c.telefone}">telefone</td>
+                <td th:text="${c.mensagem}">mensagem</td>
+                <td th:text="${#dates.format(c.criadoEm, 'dd/MM/yyyy HH:mm')}">data</td>
+                <td>
+                    <form th:action="@{/contatos/delete/{id}(id=${c.id})}" method="post" style="display:inline">
+                        <button type="submit" onclick="return confirm('Confirma exclusão?')">Excluir</button>
+                    </form>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+</body>
+</html>

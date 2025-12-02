@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desenvolvimento Web</title>
+    <link rel="stylesheet" th:href="@{/estiloweb.css}" />
+</head>
+<body>
+
+<header class="header">
+    <h1>Desenvolvimento Web</h1>
+    <img th:src="@{/imagens/desenvolvimentoweb.jpg}" alt="Imagem sobre desenvolvimento web" />
+</header>
+
+<main class="conteudo">
+    <section class="texto">
+        <h3>
+            Desenvolvimento web refere-se ao processo de criação e manutenção de sites e aplicativos web,
+            que podem variar desde simples páginas estáticas até plataformas complexas e interativas.
+        </h3>
+
+        <h2>Aspectos importantes do desenvolvimento web:</h2>
+
+        <p><strong>Front-end</strong>: É a parte do desenvolvimento que lida com a interface e interação do usuário. Utiliza HTML, CSS e JavaScript.</p>
+
+        <p><strong>Back-end</strong>: Focado na lógica, banco de dados e funcionamento interno do site.</p>
+
+        <p><strong>Full-stack</strong>: Desenvolvedor que trabalha com front-end e back-end.</p>
+
+        <p><strong>Tecnologias</strong>: Frameworks como React, Angular, Vue, Node.js, Django, Rails, entre outros.</p>
+
+        <p><strong>Responsividade</strong>: Sites devem se adaptar bem a celulares, tablets e desktops.</p>
+
+        <p><strong>Segurança</strong>: Envolve criptografia, autenticação, prevenção contra ataques e boas práticas.</p>
+
+        <p><strong>SEO</strong>: Técnicas para melhorar o posicionamento nos mecanismos de busca.</p>
+
+        <p><u><strong>Manutenção</strong></u>: Atualizações constantes e correções necessárias após o lançamento.</p>
+    </section>
+
+    <section class="video">
+        <h2>Aula completa para iniciantes</h2>
+        <iframe width="700" height="315"
+                src="https://www.youtube.com/embed/Ejkb_YpuHWs"
+                allowfullscreen>
+        </iframe>
+    </section>
+
+    <div class="voltar">
+        <a class="btn" th:href="@{/index}">Voltar</a>
+    </div>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2024 Cursos em Tecnologia para Comunidades Carentes. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
